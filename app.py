@@ -2,7 +2,7 @@ import streamlit as st
 import time
 
 # 1. 页面基本配置
-st.set_page_config(page_title="专属私厨点餐系统", layout="wide", page_icon="🍳")
+st.set_page_config(page_title="CJQ私厨点餐系统", layout="wide", page_icon="🍳")
 
 # 2. 初始化全局状态（购物车和订单状态）
 if 'cart' not in st.session_state:
@@ -137,4 +137,5 @@ with st.expander("🛠 管理员后台（后厨实时清单）"):
         for item_id, count in st.session_state.cart.items():
             dish = next(i for i in menu_data if i['id'] == item_id)
             order_summary += f"【待做】{dish['name']} —— 数量：{count}\n"
+
         st.code(order_summary)
