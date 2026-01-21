@@ -83,7 +83,7 @@ def show_menu_grid(items, tab_name):
 with st.sidebar:
     try:
         st.image("images/gift.jpg", use_container_width=True)
-        st.markdown("<h2 style='text-align: center; color: #FF4B4B;'>专属私厨点餐</h2>", unsafe_allow_html=True)
+        st.markdown("<h2 style='text-align: center; color: #FF4B4B;'>CJQ专属点餐</h2>", unsafe_allow_html=True)
     except:
         st.title("🎁 爱的点餐机")
 
@@ -164,4 +164,5 @@ with st.expander("🛠 管理员后台（历史订单查询）"):
             mime="text/csv"
         )
     else:
+
         st.write("暂无历史订单记录。")
