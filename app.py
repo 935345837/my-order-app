@@ -5,7 +5,7 @@ import os
 import time
 
 # --- 1. 页面基本配置 ---
-st.set_page_config(page_title="CIQ专属点餐系统", layout="wide", page_icon="🍳")
+st.set_page_config(page_title="CJQ专属点餐系统", layout="wide", page_icon="🍳")
 
 # --- 2. 初始化全局状态 ---
 if 'cart' not in st.session_state:
@@ -166,3 +166,4 @@ with st.expander("🛠 管理员后台（历史订单查询）"):
     else:
 
         st.write("暂无历史订单记录。")
+
